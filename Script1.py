@@ -26,8 +26,8 @@ def generate_fake_relationships(num_records):
         c.execute("INSERT INTO relationships (person1, person2, relationship_type, start_date) VALUES (?, ?, ?, ?)",
                   (person1, person2, relationship_type, start_date))
 
-# Generate 100 fake relationships
-generate_fake_relationships(100)
+# Generate 200 fake relationships
+generate_fake_relationships(200)
 
 # Commit changes and close connection
 conn.commit()
